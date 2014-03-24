@@ -1,0 +1,19 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="settings_item_min_height">60dip</dimen>
+    <dimen name="screen_title_height">60dip</dimen>
+    
+    <!-- 首页底部导航栏 -->
+    <dimen name="bottom_tab_font_size">12.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">8.0dip</dimen>
+    <dimen name="bottom_tab_padding_down">5.0dip</dimen>
+    <dimen name="bottom_tab_padding_left">5.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">1.0dip</dimen>
+
+    <dimen name="coin_thumbnail_size">65dip</dimen>
+    <dimen name="coin_price_margin_left">20dip</dimen>
+    <dimen name="coin_price_margin_bottom">5dip</dimen>
+</resources>

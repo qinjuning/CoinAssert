@@ -1,0 +1,191 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/screen_bg_color</item>
+    </style>
+
+    <style name="SettingsItemStyleNormal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">30dip</item>
+        <item name="android:paddingRight">30dip</item>
+        <item name="android:minHeight">@dimen/settings_item_min_height</item>
+        <item name="android:background">@drawable/setting_item_selector_no_corners</item>
+    </style>
+
+    <style name="SettingsItemStyleSmallHeight" parent="@style/SettingsItemStyleNormal">
+        <item name="android:minHeight">45dip</item>
+        <item name="android:layout_marginBottom">5dip</item>
+        <item name="android:paddingLeft">20dip</item>
+    </style>
+
+    <style name="SettingsItemStyleSmaller" parent="@style/SettingsItemStyleNormal">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/grey_medium</item>
+    </style>
+
+    <!-- 标题栏 -->
+    <style name="NormalHeaderBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/screen_title_height</item>
+        <item name="android:background">@drawable/bg_header_bar</item>
+    </style>
+
+    <style name="TextNormalHeaderBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="NormalButtonSubmit">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:background">@drawable/bg_submib_selector</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:layout_marginRight">15dip</item>
+        <item name="android:layout_marginTop">25dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="NormalTextMediumGrey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grey_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="NormalTextMediumGrey.InputDesc">
+        <item name="android:paddingBottom">15dip</item>
+        <item name="android:paddingTop">10sp</item>
+    </style>
+
+    <style name="NormalEditText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/bg_edittext</item>
+    </style>
+
+    <style name="NormalEditText.Input" parent="@style/NormalEditText">
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:paddingTop">8dip</item>
+    </style>
+
+    <style name="NormalTextLightGrey" parent="@style/NormalTextMediumGrey">
+        <item name="android:textColor">@color/grey_light</item>
+    </style>
+
+    <!-- 首页导航栏 -->
+    <style name="main_tab_bottom">
+        <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+        <item name="android:textColor">@color/home_tab_txt_selector</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/home_tab_selectbg</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:paddingBottom">@dimen/bottom_tab_padding_down</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <!-- 侧边栏 -->
+    <style name="slidingmenu_top_fixed_txt">
+        <item name="android:textColor">@color/sliding_menu_item_textcolor</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="slidingmenu_top_dynamic_txt">
+        <item name="android:textColor">@color/sliding_menu_item_sub_textcolor</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 侧边栏 -->
+    <style name="SlidingMenuStyle">
+        <item name="android:textColor">@color/sliding_menu_txt_selectbg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingRight">15dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">10dip</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- 侧边栏  左侧一级导航栏 -->
+    <style name="SlidingLeftMenuStyle.ToptLevel" parent="SlidingMenuStyle">
+        <item name="android:minHeight">45dip</item>
+        <item name="android:paddingLeft">20dip</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <!-- 侧边栏   左侧二级导航栏 -->
+    <style name="SlidingLeftMenuStyle.SecondaryLevel" parent="SlidingMenuStyle">
+        <item name="android:background">@drawable/slidingmenu_selector</item>
+        <item name="android:minHeight">50dip</item>
+        <item name="android:paddingLeft">50dip</item>
+    </style>
+
+    <!-- 侧边栏  右侧导航栏 -->
+    <style name="SlidingRightMenuStyle.Level" parent="SlidingMenuStyle">
+        <item name="android:minHeight">40dip</item>
+        <item name="android:paddingRight">15dip</item>
+        <item name="android:paddingLeft">20dip</item>
+        <item name="android:drawablePadding">15dip</item>
+        <item name="android:background">@drawable/slidingmenu_selector</item>
+    </style>
+
+    <style name="top_level_rl">
+        <item name="android:paddingTop">6dip</item>
+        <item name="android:paddingLeft">20dip</item>
+        <item name="android:paddingBottom">6dip</item>
+    </style>
+
+    <style name="second_level_rl_left">
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingLeft">25dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <style name="second_level_rl_right">
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <style name="top_level_txt">
+        <item name="android:textColor">@color/sliding_menu_txt_selectbg</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="second_level_txt">
+        <item name="android:textColor">@color/grey_light</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="line_horizontal">
+        <item name="android:background">@color/sliding_menu_divider</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+
+    <style name="line_vertical">
+        <item name="android:background">@color/sliding_menu_divider</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+</resources>

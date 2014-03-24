@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_item_selector_no_corners"
+    android:minHeight="?android:attr/listPreferredItemHeight" >
+
+    <TextView
+        android:id="@+id/tv_coin_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="2dip"
+        android:layout_toLeftOf="@+id/tv_coin_status"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:minWidth="50dip"
+        android:text="比特币"
+        android:textColor="@color/grey_medium"
+        android:textSize="18sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_coin_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dip"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:maxLines="2"
+        android:text="@string/alert_coin_not_set"
+        android:textColor="@color/grey_light"
+        android:textSize="16sp" >
+    </TextView>
+
+</RelativeLayout>

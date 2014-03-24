@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.coinwtb.coinassistant.widget.SetTimeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginRight="10dip" >
+
+    <TextView
+        android:id="@+id/tv_home_time"
+        style="@style/NormalTextMediumGrey.InputDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首页看盘时间"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_home_time"
+        style="@style/NormalEditText.Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_toLeftOf="@+id/btn_home_time_inc"
+        android:layout_toRightOf="@+id/tv_home_time"
+        android:gravity="left|center_vertical"
+        android:hint="最低10s"
+        android:inputType="number"
+        android:textColor="@color/grey_dark"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_home_time_inc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_home_time"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/edit_home_time"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/bg_submit"
+        android:text="+"
+        android:textColor="@color/grey_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_alert_time"
+        style="@style/NormalTextMediumGrey.InputDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_home_time"
+        android:layout_marginTop="10dip"
+        android:text="预警刷新时间"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_alert_time"
+        style="@style/NormalEditText.Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_alert_time"
+        android:layout_below="@id/tv_home_time"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_toLeftOf="@+id/btn_alert_time_inc"
+        android:layout_toRightOf="@+id/tv_alert_time"
+        android:gravity="left|center_vertical"
+        android:hint="最低10s"
+        android:inputType="number"
+        android:textColor="@color/grey_dark"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_alert_time_inc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_alert_time"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/edit_alert_time"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/bg_submit"
+        android:text="+"
+        android:textColor="@color/grey_dark"
+        android:textSize="18sp" />
+
+</com.coinwtb.coinassistant.widget.SetTimeRelativeLayout>

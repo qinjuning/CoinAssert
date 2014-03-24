@@ -1,0 +1,23 @@
+{
+	"platform" : "比特儿",
+	"api_format" : "http://data.bter.com/api/1/ticker/\%1\$s_\%2\$s",
+	"coinsSuppertList" : [
+	                        {"id":1, "cn_name" : "比特币", "en_name":"Bitcoin", "short_name":"BTC", "transfer_type": "CNY", "api_url" : "" } ,
+	                        {"id":2, "cn_name" : "莱特币", "en_name":"Litecoin", "short_name":"LTC", "transfer_type": "CNY", "api_url" : ""} ,
+	                        {"id":3, "cn_name" : "宇宙币", "en_name":"Cosmoscoin", "short_name":"CMC", "transfer_type": "CNY", "api_url" : ""} ,
+	                        {"id":4, "cn_name" : "数码币", "en_name":"DigitalCoin", "short_name":"DGC", "transfer_type": "CNY", "api_url" : ""} ,
+	                        {"id":5, "cn_name" : "狗狗币", "en_name":"DogeCoin", "short_name":"DOGE", "transfer_type": "CNY", "api_url" : ""} ,
+	                        {"id":6, "cn_name" : "无限币", "en_name":"InfiniteCoin", "short_name":"IFC", "transfer_type": "CNY", "api_url" : ""} ,
+	                        {"id":7, "cn_name" : "美卡币", "en_name":"MegaCoin", "short_name":"MEC", "transfer_type": "CNY", "api_url" : ""} ,
+	                        {"id":8, "cn_name" : "极点币", "en_name":"ExtremeCoin", "short_name":"EXC", "transfer_type": "CNY", "api_url" : ""} ,
+	                        {"id":9, "cn_name" : "比特股", "en_name":"ProtoShare", "short_name":"PTS", "transfer_type": "CNY", "api_url" : ""} ,
+	                        {"id":10, "cn_name" : "夸克币", "en_name":"Quark", "short_name":"QRK", "transfer_type": "CNY", "api_url" : ""} ,
+	                        {"id":11, "cn_name" : "红币",  "en_name":"RedCoin", "short_name":"RED", "transfer_type": "CNY", "api_url" : ""} ,
+	                        {"id":12, "cn_name" : "安全币", "en_name":"SecureCoin", "short_name":"SRC", "transfer_type": "CNY", "api_url" : ""} ,
+	                        {"id":13, "cn_name" : "奖赏币", "en_name":"TagCoin", "short_name":"TAG", "transfer_type": "CNY", "api_url" : ""} ,
+	                        {"id":14, "cn_name" : "世界币", "en_name":"WorldCoin", "short_name":"WDC", "transfer_type": "CNY", "api_url" : ""} ,
+	                        {"id":15, "cn_name" : "质数币", "en_name":"Primecoin", "short_name":"XPM", "transfer_type": "CNY", "api_url" : ""} ,
+	                        {"id":16, "cn_name" : "招财币", "en_name":"ZCCoin", "short_name":"ZCC", "transfer_type": "CNY", "api_url" : ""},
+	                        {"id":17, "cn_name" : "泽塔币", "en_name":"ZetaCoin", "short_name":"ZET", "transfer_type": "CNY", "api_url" : ""} 
+		                   ]
+}

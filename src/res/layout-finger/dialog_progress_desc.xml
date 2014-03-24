@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ProgressBar
+        android:id="@+id/progress_dialog"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="20dip" />
+
+    <TextView
+        android:id="@+id/tv_desc_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/progress_dialog"
+        android:paddingBottom="5dip"
+        android:paddingTop="13dip"
+        android:text="123"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_exit_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_desc_dialog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/bg_dialog_btn"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="退出云会议"
+        android:textColor="@color/grey_dark"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

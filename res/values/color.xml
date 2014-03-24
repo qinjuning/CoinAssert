@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#44b5df</color>
+    <color name="red">#ffff0101</color>
+    <color name="lightorange">#ffffa200</color>
+    <color name="light_blue">#ffcae3eb</color>
+    <color name="green">#8eb52a</color>
+
+    <!-- tab字体颜色 灰色 -->
+    <color name="home_tab_textcolor">#595959</color>
+    <!-- 分割线颜色 -->
+    <color name="divider_color">#d9d9d9</color>
+    <!-- 深灰色 A -->
+    <color name="grey_dark">#ff333333</color>
+    <!-- 中灰色 B -->
+    <color name="grey_medium">#666666</color>
+    <!-- 浅灰色 C -->
+    <color name="grey_light">#999999</color>
+    <!-- 土黄色  F -->
+    <color name="yellow_tu">#754e23</color>
+    <!-- 橘黄色  G -->
+    <color name="orange">#ffa200</color>
+    <!-- 白色 D -->
+    <color name="white">#ffffffff</color>
+    <!-- 底图颜色 -->
+    <color name="screen_bg_color">#f1f1f1</color>
+
+    <!-- 侧边栏色块 -->
+    <color name="sliding_menu_pressed">#2F2F2F</color>
+    <color name="sliding_menu_item_textcolor">#D1D1D1</color>
+    <color name="sliding_menu_item_sub_textcolor">#ED8A2B</color>
+    <color name="sliding_menu_divider">#272A2F</color>
+    <color name="sliding_menu_bg">#1A1D21</color>
+
+</resources>

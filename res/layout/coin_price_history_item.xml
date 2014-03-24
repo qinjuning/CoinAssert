@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.coinwtb.coinassistant.widget.CoinRealPriceRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coin_real_price_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_item_selector_no_corners" >
+
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="3dip"
+        android:scaleType="center"
+        android:text="45"
+        android:gravity="center"
+        android:minWidth="25dip"
+        android:textColor="@color/grey_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_coin_last_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:layout_toLeftOf="@+id/tv_coin_update_time"
+        android:layout_toRightOf="@id/tv_position"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:text="@string/coin_last_price_format" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_coin_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:gravity="left"
+        android:textSize="12sp"
+        android:text="2014-01-22 09:00:00" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_coin_high_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_coin_last_price"
+        android:layout_below="@id/tv_coin_last_price"
+        android:layout_marginTop="2dip"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:text="@string/coin_high_price_format" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_coin_low_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_coin_last_price"
+        android:layout_below="@id/tv_coin_high_price"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="2dip"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:maxLines="2"
+        android:text="@string/coin_low_price_format" >
+    </TextView>
+
+</com.coinwtb.coinassistant.widget.CoinRealPriceRelativeLayout>

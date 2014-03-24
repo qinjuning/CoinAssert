@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/screen_top_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/more_activity_content1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <RelativeLayout style="@style/SettingsItemStyleSmallHeight" >
+
+                    <TextView
+                        android:id="@+id/tv_broadbrand_phenomenon_desc"
+                        style="@style/NormalTextMediumGrey"
+                        android:layout_centerVertical="true"
+                        android:text="选择货币" />
+
+                    <Spinner
+                        android:id="@+id/spinner_coins"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dip"
+                        android:layout_toRightOf="@+id/tv_broadbrand_phenomenon_desc" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_color" />
+
+                <RelativeLayout
+                    style="@style/SettingsItemStyleSmallHeight"
+                    android:paddingRight="0dip" >
+
+                    <TextView
+                        android:id="@+id/tv_contact_phone_desc"
+                        style="@style/NormalTextMediumGrey"
+                        android:layout_centerVertical="true"
+                        android:text="最新价格" />
+
+                    <EditText
+                        android:id="@+id/edit_last_price"
+                        style="@style/NormalEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_toLeftOf="@+id/progress_dialog"
+                        android:layout_toRightOf="@id/tv_contact_phone_desc"
+                        android:enabled="false"
+                        android:textSize="14sp" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_dialog"
+                        style="@android:style/Widget.ProgressBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:inputType="numberDecimal"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_color" />
+
+                <RelativeLayout style="@style/SettingsItemStyleSmallHeight" >
+
+                    <TextView
+                        android:id="@+id/tv_alert_high"
+                        style="@style/NormalTextMediumGrey"
+                        android:layout_centerVertical="true"
+                        android:text="报警上限" />
+
+                    <EditText
+                        android:id="@+id/edit_alert_high"
+                        style="@style/NormalEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dip"
+                        android:layout_toRightOf="@id/tv_alert_high"
+                        android:inputType="numberDecimal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/alert_relative_high_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:id="@id/predefine_divider2"
+                        style="@style/SettingsItemStyleSmallHeight" >
+
+                        <TextView
+                            android:id="@+id/tv_alert_relative_high"
+                            style="@style/NormalTextMediumGrey"
+                            android:layout_centerVertical="true"
+                            android:text="相对上限" />
+
+                        <EditText
+                            android:id="@+id/edit_relative_high"
+                            style="@style/NormalEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12dip"
+                            android:layout_toRightOf="@id/tv_alert_relative_high"
+                            android:inputType="numberDecimal" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/edit_relative_high_desc"
+                        style="@style/NormalTextMediumGrey"
+                        android:layout_below="@id/predefine_divider2"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="5dip"
+                        android:paddingLeft="95dip"
+                        android:text="您可输入百分比设置价格"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_color" />
+
+                <RelativeLayout
+                    android:id="@+id/alert_relative_high_rl"
+                    style="@style/SettingsItemStyleSmallHeight" >
+
+                    <TextView
+                        android:id="@+id/tv_broadbrand_account_desc"
+                        style="@style/NormalTextMediumGrey"
+                        android:layout_centerVertical="true"
+                        android:text="报警下限" />
+
+                    <EditText
+                        android:id="@+id/edit_alert_lower"
+                        style="@style/NormalEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dip"
+                        android:layout_toRightOf="@id/tv_broadbrand_account_desc"
+                        android:inputType="numberDecimal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/alert_relative_lower_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:id="@id/predefine_divider1"
+                        style="@style/SettingsItemStyleSmallHeight" >
+
+                        <TextView
+                            android:id="@+id/tv_alert_relative_lower"
+                            style="@style/NormalTextMediumGrey"
+                            android:layout_centerVertical="true"
+                            android:text="相对下限" />
+
+                        <EditText
+                            android:id="@+id/edit_alert_relative_lower"
+                            style="@style/NormalEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12dip"
+                            android:layout_toRightOf="@id/tv_alert_relative_lower"
+                            android:inputType="numberDecimal" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_relative_lower_desc"
+                        style="@style/NormalTextMediumGrey"
+                        android:layout_below="@id/predefine_divider1"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="5dip"
+                        android:paddingLeft="95dip"
+                        android:text="您可输入百分比设置价格"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_color" />
+
+                <RelativeLayout
+                    style="@style/SettingsItemStyleSmallHeight"
+                    android:paddingRight="0dip" >
+
+                    <TextView
+                        android:id="@+id/tv_coin_refresh_time"
+                        style="@style/NormalTextMediumGrey"
+                        android:layout_centerVertical="true"
+                        android:text="刷新时间" />
+
+                    <EditText
+                        android:id="@+id/edit_coin_refresh_time"
+                        style="@style/NormalEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_toLeftOf="@+id/tv_time_desc"
+                        android:layout_toRightOf="@id/tv_coin_refresh_time"
+                        android:hint="最低10秒"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_time_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dip"
+                        android:text="秒"
+                        android:textSize="18sp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_color" />
+
+                <RelativeLayout style="@style/SettingsItemStyleSmallHeight" >
+
+                    <TextView
+                        style="@style/NormalTextMediumGrey"
+                        android:layout_centerVertical="true"
+                        android:text="是否震动" />
+
+                    <CheckBox
+                        android:id="@+id/chk_vibrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_color" />
+            </LinearLayout>
+
+            <Button
+                android:id="@id/btn_submit"
+                style="@style/NormalButtonSubmit"
+                android:layout_marginBottom="20dip"
+                android:gravity="center"
+                android:text="@string/add" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

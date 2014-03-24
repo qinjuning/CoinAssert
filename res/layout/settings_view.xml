@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/screen_top_title" />
+
+    <TextView
+        android:id="@+id/rl_refresh_time"
+        style="@style/SettingsItemStyleNormal"
+        android:drawableRight="@drawable/list_right_arrow"
+        android:text="刷新时间设置" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color" />
+
+    <RelativeLayout
+        android:id="@+id/rl_push_settings"
+        style="@style/SettingsItemStyleNormal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="3dip"
+            android:paddingTop="5dip"
+            android:text="消息推送"
+            android:textColor="@color/grey_dark"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/vibrate_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_app_version"
+        style="@style/SettingsItemStyleNormal" >
+
+        <TextView
+            android:id="@+id/tv_app_version_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="3dip"
+            android:paddingTop="5dip"
+            android:text="@string/settings_version"
+            android:textColor="@color/grey_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_app_version"
+            android:layout_below="@+id/tv_app_version_desc"
+            android:paddingBottom="3dip"
+            android:text="@string/settings_version_name"
+            android:textColor="@color/grey_light"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/list_right_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/tv_help"
+        style="@style/SettingsItemStyleNormal"
+        android:drawableRight="@drawable/list_right_arrow"
+        android:text="@string/about_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/tv_exit"
+        style="@style/SettingsItemStyleNormal"
+        android:drawableRight="@drawable/list_right_arrow"
+        android:text="@string/settings_exit" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color" />
+
+</LinearLayout>

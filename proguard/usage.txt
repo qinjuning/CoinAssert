@@ -1,0 +1,230 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.coinwtb.coinassistant.BuildConfig
+com.coinwtb.coinassistant.R:
+    10:10:public R()
+com.coinwtb.coinassistant.R$anim
+com.coinwtb.coinassistant.R$array
+com.coinwtb.coinassistant.R$attr
+com.coinwtb.coinassistant.R$color
+com.coinwtb.coinassistant.R$dimen
+com.coinwtb.coinassistant.R$drawable
+com.coinwtb.coinassistant.R$id
+com.coinwtb.coinassistant.R$layout
+com.coinwtb.coinassistant.R$string
+com.coinwtb.coinassistant.R$style
+com.coinwtb.coinassistant.R$styleable:
+    625:625:public R$styleable()
+com.coinwtb.coinassistant.bean.CoinBean:
+    private static final int PRICE_CAPACITY
+com.coinwtb.coinassistant.bean.CoinPriceBean:
+    99:99:public double getAvgPrice()
+    135:136:public void setRetriveTime(long)
+    143:144:public void setCoinName(java.lang.String)
+com.coinwtb.coinassistant.common.CoinJsonFields
+com.coinwtb.coinassistant.common.CoinPriceEventThread:
+    private static final java.lang.String TAG
+com.coinwtb.coinassistant.common.CoinPriceProcessStrategy:
+    32:35:public CoinPriceProcessStrategy(com.coinwtb.coinassistant.common.ICoinPriceChangedListener,boolean)
+    41:42:public CoinPriceProcessStrategy(com.coinwtb.coinassistant.common.ICoinPriceChangedListener,com.coinwtb.coinassistant.bean.CoinBean)
+com.coinwtb.coinassistant.common.CoinsDatabaseHelper:
+    private static final java.lang.String DB_NAME
+    public static final java.lang.String BTER_TABLE_NAME
+    public static final java.lang.String TBL_NAME
+    public static final java.lang.String COLUMN_ID
+    public static final java.lang.String COLUMN_EN_NAME
+    public static final java.lang.String COLUMN_CN_NAME
+    public static final java.lang.String COLUMN_SHORT_NAME
+    public static final java.lang.String COLUMN_TRANSFER_TYPE
+    public static final java.lang.String COLUMN_API_URL
+    public static final java.lang.String COLUMN_NOTIFY_FLAGS
+    public static final java.lang.String COLUMN_NOTIFY_DEFAULTS
+    public static final java.lang.String COLUMN_NOTIFY_SOUND
+    public static final java.lang.String COLUMN_UPPER_PRICE
+    public static final java.lang.String COLUMN_LOWER_PRICE
+    public static final java.lang.String COLUMN_IS_WARNING
+    public static final java.lang.String COLUMN_REFRESH_TIME
+    private static com.coinwtb.coinassistant.common.CoinsDatabaseHelper _INSTANCE
+    130:131:public static synchronized com.coinwtb.coinassistant.common.CoinsDatabaseHelper getInstance(android.content.Context)
+com.coinwtb.coinassistant.common.CommonDatabaseHelper:
+    private static final int DB_VERSION
+    71:81:public void deleteTable(java.lang.String)
+    140:166:protected void updateData(java.lang.String,java.util.ArrayList,java.util.ArrayList,java.lang.String)
+com.coinwtb.coinassistant.common.DBAdapter:
+    85:85:public long insert(java.lang.String,android.content.ContentValues)
+    117:117:public boolean insert(com.coinwtb.coinassistant.bean.CoinBean,java.lang.String)
+    130:130:public long deleteOneData(java.lang.String,java.lang.String)
+    141:141:public long deleteAllData(java.lang.String)
+    156:156:private long update(java.lang.String,android.content.ContentValues,java.lang.String)
+    169:172:public boolean delete(int,java.lang.String)
+    178:182:public void execSQL(java.lang.String)
+com.coinwtb.coinassistant.common.RequestCoinPriceFuture:
+    private static final java.lang.String TAG
+com.coinwtb.coinassistant.common.RequestCoinPriceRunnable:
+    private static final java.lang.String TAG
+    88:93:public RequestCoinPriceRunnable(com.coinwtb.coinassistant.common.ICoinPriceChangedListener,boolean,com.coinwtb.coinassistant.bean.CoinBean)
+    209:213:private void sendPriceChanged(com.coinwtb.coinassistant.bean.CoinBean)
+com.coinwtb.coinassistant.fragment.CoinWaringFragment:
+    protected static final int INVALID_INDEX
+    public static final int REQUEST_ADD
+    public static final int REQUEST_SET
+    public static final java.lang.String EXTRA_COIN_ID
+    79:79:protected int getPosition()
+    290:297:protected java.lang.String getFragmentStatus()
+    302:306:protected int parseToInt(java.lang.String)
+com.coinwtb.coinassistant.fragment.CoinWaringPagerAdapter:
+    private static final java.lang.String TAG
+    public static final int COIN_WARING_SIZE
+com.coinwtb.coinassistant.ui.CoinPriceHistoryActivity:
+    private static final java.lang.String TAG
+com.coinwtb.coinassistant.ui.CoinWaringAddActivity:
+    private static final java.lang.String TAG
+    private static final int MSG_COIN_PRICE_CHANGED
+    334:346:private boolean checkInputBig()
+com.coinwtb.coinassistant.ui.CoinWaringManagerService:
+    private static final java.lang.String TAG
+com.coinwtb.coinassistant.ui.CoinWarningActivity:
+    private static final java.lang.String TAG
+com.coinwtb.coinassistant.ui.HomeActivity:
+    private static final java.lang.String TAG
+com.coinwtb.coinassistant.ui.SettingsActivity:
+    private static final int DIALOG_SET_TIME_REFRESH
+    private static final int DIALOG_LOGOUT_ACCOUNT
+com.coinwtb.coinassistant.ui.WelcomeActivity:
+    private static final java.lang.String TAG
+    private static final int MSG_FLIPPER
+    private static final float mAlpha_Start
+    private static final float mAlpha_End
+    private static final int NORAML_DURING_TIME
+    private static final int LONG_DURING_TIME
+com.coinwtb.coinassistant.ui.base.BaseActivity:
+    private static final java.lang.String TAG
+    72:74:protected void setRightViewTitle(java.lang.String)
+    77:81:protected void setRightViewTitle(int)
+    84:84:protected android.view.View getRightView()
+    88:91:protected void setRightViewVisible(boolean)
+com.coinwtb.coinassistant.ui.base.BaseFragmentActivity:
+    58:61:protected void setHeaderTitle(java.lang.String)
+    64:65:protected void setHeaderTitle(int)
+    68:70:protected void setRightViewTitle(java.lang.String)
+    73:77:protected void setRightViewTitle(int)
+    80:80:protected android.view.View getRightView()
+    84:87:protected void setRightViewVisible(boolean)
+    112:113:public void defaultFinish()
+com.coinwtb.coinassistant.ui.base.CoinApplication:
+    private int index
+    169:177:public synchronized com.coinwtb.coinassistant.bean.CoinBean getCoinById(int)
+com.coinwtb.coinassistant.utils.Constants
+com.coinwtb.coinassistant.utils.FormatUtils:
+    17:17:public FormatUtils()
+    60:61:public static java.lang.String makeShortDateStringFromCalendar(java.util.Calendar)
+com.coinwtb.coinassistant.utils.PreferencesService:
+    private static final java.lang.String PRE_HOME_TIME
+    private static final java.lang.String PRE_ALERT_TIME
+    public static final java.lang.String PRE_LAST_SHOW_COIN_INDEX
+    public static final java.lang.String PRE_FIRST_USER
+    public static final java.lang.String PRE_PUSH_BIND_FLAG
+    public static final int MILLIONS
+    public static final int DEFAULT_HOME_TIME
+    public static final int DEFAULT_ALERT_TIME
+    49:54:public static com.coinwtb.coinassistant.utils.PreferencesService getInstance(android.content.Context)
+    70:76:void saveInfo(java.util.Map)
+    82:85:public void setPreferences(java.lang.String,java.lang.String)
+    91:94:public void putLong(java.lang.String,long)
+    100:100:public long getLong(java.lang.String)
+    107:107:public java.lang.String getInfo(java.lang.String)
+com.coinwtb.coinassistant.utils.Slog:
+    3:3:public Slog()
+    7:8:protected static void setDebug(boolean)
+    29:32:public static void w(java.lang.String,java.lang.String)
+com.coinwtb.coinassistant.utils.UncaughtCrashHandler:
+    public static final java.lang.String TAG
+com.coinwtb.coinassistant.utils.UpdateManager:
+    private static final int NORMAL
+    private static final int UPDATE
+    private static final int UPDATE_ERROR
+    private static final int DOWN
+    private static final int DOWN_ERROR
+com.coinwtb.coinassistant.utils.Utils:
+    public static final java.lang.String APP_ROOT_FOLDER_NAME
+    17:17:public Utils()
+    87:88:public static int px2dip(android.content.Context,float)
+    92:93:public static varargs java.lang.String formateWithResId(android.content.Context,int,java.lang.Object[])
+    109:110:public static void showLongToast(android.content.Context,java.lang.CharSequence)
+com.coinwtb.coinassistant.widget.CoinPriceShowLinearLayout:
+    private static final java.lang.String TAG
+    private static final int MSG_COIN_PRICE_CHANGED
+com.coinwtb.coinassistant.widget.CoinRealPriceRelativeLayout:
+    private static final java.lang.String TAG
+com.coinwtb.coinassistant.widget.CoinWarningRelativeLayout:
+    private static final java.lang.String TAG
+com.coinwtb.coinassistant.widget.ExitDialogWrapper
+com.coinwtb.coinassistant.widget.ExitDialogWrapper$1
+com.coinwtb.coinassistant.widget.ExitDialogWrapper$2
+com.coinwtb.coinassistant.widget.FlowIndicator:
+    64:69:public void next()
+    72:77:public void previous()
+com.coinwtb.coinassistant.widget.MeetingDialog:
+    43:44:public MeetingDialog(android.content.Context,int)
+    155:156:public void setMessage(int)
+com.coinwtb.coinassistant.widget.PriceChartRelativeLayout:
+    public static final int MAX_SIZE
+    public static final int K_TYPE_1_MINUTES
+    public static final int K_TYPE_5_MINUTES
+    private static final int ONE_MINUTES
+    private static final int FIVE_MINUTES
+    81:86:public void changeKType(int)
+com.coinwtb.coinassistant.widget.SetTimeRelativeLayout:
+    public static final java.lang.String TAG
+com.coinwtb.coinassistant.widget.slidingmenu.CustomViewAbove:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final boolean USE_CACHE
+    private static final int MAX_SETTLE_DURATION
+    private static final int MIN_DISTANCE_FOR_FLING
+    private static final int INVALID_POINTER
+    282:285:public void addIgnoredView(android.view.View)
+    288:289:public void removeIgnoredView(android.view.View)
+    292:293:public void clearIgnoredViews()
+    350:356:public int getChildWidth(int)
+    361:361:public boolean isSlidingEnabled()
+    375:376:void smoothScrollTo(int,int)
+    906:923:protected boolean canScroll(android.view.View,boolean,int,int,int)
+com.coinwtb.coinassistant.widget.slidingmenu.CustomViewAbove$SimpleOnPageChangeListener:
+    146:146:public void onPageScrollStateChanged(int)
+com.coinwtb.coinassistant.widget.slidingmenu.CustomViewBehind:
+    private static final java.lang.String TAG
+    private static final int MARGIN_THRESHOLD
+    345:361:public void drawShadow(android.view.View,android.graphics.Canvas)
+    364:383:public void drawFade(android.view.View,android.graphics.Canvas,float)
+    390:411:public void drawSelector(android.view.View,android.graphics.Canvas,float)
+com.coinwtb.coinassistant.widget.slidingmenu.SlidingActivity:
+    118:119:public void showContent()
+    125:126:public void showMenu()
+    132:133:public void showSecondaryMenu()
+    139:140:public void setSlidingActionBarEnabled(boolean)
+com.coinwtb.coinassistant.widget.slidingmenu.SlidingActivityBase
+com.coinwtb.coinassistant.widget.slidingmenu.SlidingActivityHelper:
+    95:98:public void setSlidingActionBarEnabled(boolean)
+    149:151:public void setContentView(android.view.View)
+    192:193:public void showMenu()
+    200:201:public void showSecondaryMenu()
+com.coinwtb.coinassistant.widget.slidingmenu.SlidingMenu:
+    private static final java.lang.String TAG
+    public static final int SLIDING_WINDOW
+    public static final int SLIDING_CONTENT
+    public static final int TOUCHMODE_MARGIN
+    public static final int TOUCHMODE_FULLSCREEN
+    public static final int TOUCHMODE_NONE
+    public static final int LEFT
+    public static final int RIGHT
+    public static final int LEFT_RIGHT
+    435:435:public boolean isSlidingEnabled()
+    480:481:public void showMenu()
+    497:498:public void showSecondaryMenu()
+    853:854:public void addIgnoredView(android.view.View)
+    862:863:public void removeIgnoredView(android.view.View)
+    869:870:public void clearIgnoredViews()
+com.coinwtb.coinassistant.widget.slidingmenu.SlidingMenu$1:
+    public static final int POSITION_OPEN
+    public static final int POSITION_CLOSE

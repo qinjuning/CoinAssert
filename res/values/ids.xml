@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 预分配的id，可以在RelativeLayout中使用 -->
+    <item name="predefine_divider1" type="id"/>
+    <item name="predefine_divider2" type="id"/>
+    <item name="predefine_divider3" type="id"/>
+    <item name="predefine_divider4" type="id"/>
+    <item name="predefine_divider5" type="id"/>
+    
+    <item name="selected_view" type="id"/>
+    <item name="btn_submit" type="id"/>
+
+</resources>

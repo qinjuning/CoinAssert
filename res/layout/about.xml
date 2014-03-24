@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/predefine_divider1"
+        android:layout_alignParentTop="true"
+        layout="@layout/screen_top_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/predefine_divider1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dip"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/NormalTextMediumGrey"
+                android:layout_marginLeft="8dip"
+                android:text="@string/about_first_title"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/NormalTextMediumGrey"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="3dip"
+                android:text="@string/about_first_content"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/NormalTextMediumGrey"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="3dip"
+                android:text="二、关于开发者"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/NormalTextMediumGrey"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="3dip"
+                android:text="   我们也是一群有技术有梦想的青年, 幻想在虚拟货币的世界中完成逆袭, 但我们更愿意用微博的力量使用工具解决您生活的烦恼，同时完成技术的淬炼。"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/NormalTextMediumGrey"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="3dip"
+                android:text="@string/about_three_title"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/NormalTextMediumGrey"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="3dip"
+                android:autoLink="email"
+                android:text="@string/about_three_content"
+                android:textColorLink="@color/blue"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/NormalTextMediumGrey"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="3dip"
+                android:text="@string/about_fourth_title"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/NormalTextMediumGrey"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="3dip"
+                android:text="@string/about_fourth_content"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_color" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip" >
+
+                <TextView
+                    android:id="@id/predefine_divider1"
+                    style="@style/NormalTextMediumGrey"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:text="BTC"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_btc_address"
+                    style="@style/NormalTextMediumGrey"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_toLeftOf="@+id/btn_btc_copy"
+                    android:layout_toRightOf="@id/predefine_divider1"
+                    android:text="1Nq7nAA6y7VBZ88tCeuhrzvbhj1djVEcoJ"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/btn_btc_copy"
+                    style="@style/NormalTextMediumGrey"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dip"
+                    android:background="@drawable/bg_submib_gray_selector"
+                    android:padding="5dip"
+                    android:text="@string/copy"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_color" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip" >
+
+                <TextView
+                    android:id="@id/predefine_divider2"
+                    style="@style/NormalTextMediumGrey"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:text="LTC"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_ltc_address"
+                    style="@style/NormalTextMediumGrey"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_toLeftOf="@+id/btn_ltc_copy"
+                    android:layout_toRightOf="@id/predefine_divider2"
+                    android:text="LMnzYXJQxgE6Hb6XTAxwhUgECYyC3ZSrG7"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/btn_ltc_copy"
+                    style="@style/NormalTextMediumGrey"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dip"
+                    android:background="@drawable/bg_submib_gray_selector"
+                    android:padding="5dip"
+                    android:text="@string/copy"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_color" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip" >
+
+                <TextView
+                    android:id="@id/predefine_divider3"
+                    style="@style/NormalTextMediumGrey"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:text="IFC"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_ifc_address"
+                    style="@style/NormalTextMediumGrey"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_toLeftOf="@+id/btn_ifc_copy"
+                    android:layout_toRightOf="@id/predefine_divider3"
+                    android:text="iAsQpF24SQ7Vn8QHFPp3CoaYpXE7hNGjTL"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/btn_ifc_copy"
+                    style="@style/NormalTextMediumGrey"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/bg_submib_gray_selector"
+                    android:padding="5dip"
+                    android:text="@string/copy"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_color" />
+
+            <TextView
+                style="@style/NormalTextMediumGrey"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="15dip"
+                android:text="Copyright 本软件归属于武汉智汇云海网络科技有限公司"
+                android:textColor="@color/yellow_tu"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

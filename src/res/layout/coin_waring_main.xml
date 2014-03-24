@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.coinwtb.coinassistant.widget.CoinWarningRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.coinwtb.coinassistant"
+    android:id="@+id/coinwarning_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+    <com.coinwtb.coinassistant.widget.FlowIndicator
+        android:id="@+id/pager_indictor"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dip"
+        app:point_normal_color="@color/grey_medium"
+        app:point_radius="3dip"
+        app:point_seleted_color="#ff9f31"
+        app:point_size="5dip"
+        app:space="5dip" />
+
+</com.coinwtb.coinassistant.widget.CoinWarningRelativeLayout>

@@ -1,0 +1,83 @@
+# view res/layout/coin_waring_main.xml #generated:9
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/notification_custom_builder.xml #generated:48
+-keep class android.widget.DateTimeView { <init>(...); }
+
+# view AndroidManifest.xml #generated:175
+-keep class com.baidu.android.pushservice.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:151
+-keep class com.baidu.android.pushservice.PushServiceReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:161
+-keep class com.baidu.android.pushservice.RegistrationReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:128
+-keep class com.baidu.android.pushservice.richmedia.MediaListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:121
+-keep class com.baidu.android.pushservice.richmedia.MediaViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.coinwtb.coinassistant.ui.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:95
+-keep class com.coinwtb.coinassistant.ui.CoinPriceHistoryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.coinwtb.coinassistant.ui.CoinWaringAddActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:105
+-keep class com.coinwtb.coinassistant.ui.CoinWaringManagerService { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.coinwtb.coinassistant.ui.HomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.coinwtb.coinassistant.ui.SettingsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class com.coinwtb.coinassistant.ui.WelcomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.coinwtb.coinassistant.ui.base.CoinApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class com.coinwtb.coinassistant.ui.receiver.MyBootReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:139
+-keep class com.coinwtb.coinassistant.ui.receiver.MyPushMessageReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.coinwtb.coinassistant.ui.receiver.NetChangeReceiver { <init>(...); }
+
+# view res/layout/coin_price_show.xml #generated:2
+-keep class com.coinwtb.coinassistant.widget.CoinPriceShowLinearLayout { <init>(...); }
+
+# view res/layout/coin_price_history_item.xml #generated:2
+# view res/layout/coin_price_info.xml #generated:2
+-keep class com.coinwtb.coinassistant.widget.CoinRealPriceRelativeLayout { <init>(...); }
+
+# view res/layout/coin_waring_fragment.xml #generated:2
+# view res/layout/coin_waring_main.xml #generated:2
+-keep class com.coinwtb.coinassistant.widget.CoinWarningRelativeLayout { <init>(...); }
+
+# view res/layout/coin_waring_main.xml #generated:15
+-keep class com.coinwtb.coinassistant.widget.FlowIndicator { <init>(...); }
+
+# view res/layout/sliding_left_list_main.xml #generated:11
+-keep class com.coinwtb.coinassistant.widget.LeftCoinListView { <init>(...); }
+
+# view res/layout/coin_price_show.xml #generated:63
+-keep class com.coinwtb.coinassistant.widget.PriceChartRelativeLayout { <init>(...); }
+
+# view res/layout/main_secondary_sliding_menu.xml #generated:2
+-keep class com.coinwtb.coinassistant.widget.RightMenuLinearLayout { <init>(...); }
+
+# view finger\res/layout-finger/dialog_set_refresh_time.xml #generated:2
+-keep class com.coinwtb.coinassistant.widget.SetTimeRelativeLayout { <init>(...); }
+
+# view res/layout/slidingmenu_main.xml #generated:2
+-keep class com.coinwtb.coinassistant.widget.slidingmenu.SlidingMenu { <init>(...); }
+

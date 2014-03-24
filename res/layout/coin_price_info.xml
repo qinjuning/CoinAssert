@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.coinwtb.coinassistant.widget.CoinRealPriceRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coin_real_price_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dip" >
+
+    <TextView
+        android:id="@+id/tv_coin_last_price"
+        style="@style/NormalTextMediumGrey"
+        android:layout_marginBottom="@dimen/coin_price_margin_bottom"
+        android:layout_marginLeft="@dimen/coin_price_margin_left"
+        android:layout_marginTop="8dip"
+        android:text="@string/coin_last_price_format"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_coin_high_price"
+        style="@style/NormalTextMediumGrey"
+        android:layout_alignLeft="@id/tv_coin_last_price"
+        android:layout_below="@id/tv_coin_last_price"
+        android:layout_marginBottom="@dimen/coin_price_margin_bottom"
+        android:text="@string/coin_high_price_format" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_coin_low_price"
+        style="@style/NormalTextMediumGrey"
+        android:layout_alignLeft="@id/tv_coin_last_price"
+        android:layout_below="@id/tv_coin_high_price"
+        android:layout_marginBottom="@dimen/coin_price_margin_bottom"
+        android:text="@string/coin_low_price_format" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_coin_sell_price"
+        style="@style/NormalTextMediumGrey"
+        android:layout_alignLeft="@id/tv_coin_last_price"
+        android:layout_below="@id/tv_coin_low_price"
+        android:layout_marginBottom="@dimen/coin_price_margin_bottom"
+        android:text="@string/coin_sell_price_format" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_coin_buy_price"
+        style="@style/NormalTextMediumGrey"
+        android:layout_alignLeft="@id/tv_coin_last_price"
+        android:layout_below="@id/tv_coin_sell_price"
+        android:layout_marginBottom="@dimen/coin_price_margin_bottom"
+        android:text="@string/coin_buy_price_format" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_coin_volume"
+        style="@style/NormalTextMediumGrey"
+        android:layout_alignLeft="@id/tv_coin_last_price"
+        android:layout_below="@id/tv_coin_buy_price"
+        android:layout_marginBottom="@dimen/coin_price_margin_bottom"
+        android:text="@string/coin_volume_format" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_coin_waring_high"
+        style="@style/NormalTextMediumGrey"
+        android:layout_alignLeft="@id/tv_coin_last_price"
+        android:layout_below="@id/tv_coin_volume"
+        android:layout_marginBottom="@dimen/coin_price_margin_bottom"
+        android:layout_marginTop="5dip"
+        android:text="@string/coin_waring_high"
+        android:textColor="@color/yellow_tu"
+        android:visibility="gone" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_coin_waring_lower"
+        style="@style/NormalTextMediumGrey"
+        android:layout_alignLeft="@id/tv_coin_last_price"
+        android:layout_below="@id/tv_coin_waring_high"
+        android:layout_marginBottom="@dimen/coin_price_margin_bottom"
+        android:text="@string/coin_waring_lower"
+        android:textColor="@color/yellow_tu"
+        android:visibility="gone" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_coin_update_time"
+        style="@style/NormalTextMediumGrey"
+        android:layout_alignLeft="@id/tv_coin_last_price"
+        android:layout_below="@id/tv_coin_waring_lower"
+        android:layout_marginBottom="@dimen/coin_price_margin_bottom"
+        android:text="@string/coin_waring_lower"
+        android:textColor="@color/yellow_tu"
+        android:visibility="gone" >
+    </TextView>
+
+</com.coinwtb.coinassistant.widget.CoinRealPriceRelativeLayout>

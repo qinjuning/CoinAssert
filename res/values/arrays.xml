@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="refresh_time_array">
+        <item>刚刚</item>
+        <item>10s前</item>
+        <item>20s前</item>
+        <item>30s前</item>
+        <item>40s前</item>
+        <item>50s前</item>
+    </string-array>
+
+</resources>

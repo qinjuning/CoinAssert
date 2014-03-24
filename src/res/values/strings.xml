@@ -1,0 +1,78 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">虚拟操盘手</string>
+    <string name="versionname">1.0.0</string>
+
+    <!-- Settings -->
+    <string name="settings_title">"设     置"</string>
+    <string name="settings_version">版本更新</string>
+    <string name="settings_help">帮助说明</string>
+    <string name="settings_exit">退出</string>
+    <string name="settings_version_name">Android %s</string>
+    <string name="toast_updating_app">更新中,请稍后...</string>
+    <string name="app_update_found">新版本</string>
+    <string name="app_update_do">立即更新</string>
+    <string name="app_update_cancel">稍后再说</string>
+    <string name="update_progress_num">%1$s/%2$s</string>
+    <string name="exit_app_desc">确定退出?</string>
+    <string name="ok">确定</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="copy">复制</string>
+    <string name="add">"添  加"</string>
+    
+    <string name="bter_format_product_name"><xliff:g id="format">%1$3s/%2$3s</xliff:g></string>
+    
+    <!-- 交易显示 -->
+    <string name="coin_price_format"><xliff:g id="format">%1$3f</xliff:g></string>
+    <string name="coin_last_time"><xliff:g id="format">更新于: %1$s</xliff:g></string>
+    <string name="coin_last_price"><xliff:g id="format">%1$3f</xliff:g></string>
+    <string name="coin_last_price_format"><xliff:g id="format">最新价 : %1$3f</xliff:g></string>
+    <string name="coin_high_price_format"><xliff:g id="format">最高价 : %1$3f</xliff:g></string>
+    <string name="coin_low_price_format"><xliff:g id="format">最低价 : %1$3f</xliff:g></string>
+    <string name="coin_sell_price_format"><xliff:g id="format">卖一价 : %1$3f</xliff:g></string>
+    <string name="coin_buy_price_format"><xliff:g id="format">买一价 : %1$3f</xliff:g></string>
+    <string name="coin_volume_format"><xliff:g id="format">成交量 : %1$3.4f</xliff:g></string>
+    <string name="coin_waring_high"><xliff:g id="format">预警上限 : %1$3f</xliff:g></string>
+    <string name="coin_waring_lower"><xliff:g id="format">预警下限 : %1$3f</xliff:g></string>
+    <string name="coin_waring_update_time"><xliff:g id="format">更新时间 : %1$s</xliff:g></string>
+    <string name="coin_waring_status_format"><xliff:g id="format">状态  :  %1$s</xliff:g></string>
+    <string name="coin_waring_status_ok"><xliff:g id="format">正常</xliff:g></string> 
+    <string name="coin_waring_status_lower"><xliff:g id="format">已低于预警下限</xliff:g></string> 
+    <string name="coin_waring_status_high"><xliff:g id="format">已高于预警上限</xliff:g></string> 
+     
+    <string name="toast_refresh">数据更新中, 请稍等......</string>
+    <string name="toast_keydown_exit">再按一次退出程序</string>
+    <string name="toast_bt38_not_open">比特时代尚未开发, 请您等待......</string>
+    <string name="toast_coin_not_set">请您先选择一种虚拟货币</string>
+    <string name="toast_alert_price_not_set">您尚未设置最高或最低预警价值</string>
+    <string name="toast_alert_price_get">价格获取中, 请稍后...</string>
+    <string name="toast_alert_not_title">未添加</string>
+    <string name="toast_alert_price_invalie">下限价格高于上限价格，请确认...</string>
+    <string name="toast_intput_full">输入有误，请将信息输入完整</string>
+    
+    <string name="alert_coin_title">预警管理</string>
+    <string name="alert_coin_set">已设置</string>
+    <string name="alert_coin_not_set">未设置</string>
+    
+    <string name="notify_alert_coin_high_content">%1$s已高于预警上限价格    最新价格:%2$3f</string>
+    <string name="notify_alert_coin_higt_title">预警上限价格:%1$3f </string>
+    <string name="notify_alert_coin_lowe_content">%1$s已低于预警下限价格    最新价格:%2$3f</string>
+    <string name="notify_alert_coin_lowe_title">预警下限价格:%1$3f </string>
+    
+    <string name="about_title">关于我们</string>
+    <string name="coin_address_clipborad">已复制到剪切板</string>
+    <string name="network_off">网络已断开, 请检查您的网络连接</string>
+    
+    <!-- 关于我们 -->
+    <string name="about_first_title">一、关于客户端</string>
+    <string name="about_first_content">"    本客户端为您提供便利的看盘、设置预警,  解决您看盘、操盘的烦扰，是您身边的财富贴心管家。虚拟操盘手, 祝你马到成功。"</string>
+    <string name="about_second_title">二、关于开发者</string>
+    <string name="about_second_content">"      我们也是一群有技术有梦想的青年, 幻想在虚拟货币的世界中完成逆袭, 但我们更愿意用微博的力量使用工具解决您生活的烦恼，同时完成技术的淬炼。"</string>
+    <string name="about_three_title">三、意见或建议</string>
+    <string name="about_three_content">"     由于开发者技术能力有限以及开发周期过短，未能面面俱到, 如果您有任何意见或建议，请随时同我们联系。联系方式:Email:qinjuning@163.com   QQ:913632548。"</string>
+    <string name="about_fourth_title">四、帮助开发者</string>
+    <string name="about_fourth_content">"    由于软件使用完全免费, 如果您愿意帮助开发者, 我们会对您的帮助感激不尽, 同时我们将会有更大信心和能力做到更好。钱包地址:"</string>
+    
+    <string name="message_title">资讯、消息</string>
+</resources>

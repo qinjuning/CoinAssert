@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.coinwtb.coinassistant.widget.RightMenuLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_menu_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sliding_menu_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="6dip"
+        android:paddingTop="6dip"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/slidingmenu_selector"
+            android:clickable="true"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/wodezhangdan_tv"
+                style="@style/top_level_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dip"
+                android:text="交易平台" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="6dip"
+        android:paddingTop="6dip"
+        android:weightSum="2" >
+
+        <!-- 比特儿 -->
+
+        <LinearLayout
+            android:id="@+id/platform_bter_ll"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/slidingmenu_selector_dark"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/platform_bter_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bter_pressed" />
+
+            <TextView
+                android:id="@+id/platform_bter_tv"
+                style="@style/top_level_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="比特儿" />
+        </LinearLayout>
+
+        <View style="@style/line_vertical" />
+
+        <!-- 比特时代 -->
+
+        <LinearLayout
+            android:id="@+id/platform_bt38_ll"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/slidingmenu_selector_dark"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/platform_bt38_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bt38" />
+
+            <TextView
+                android:id="@+id/platform_bt38_tv"
+                style="@style/top_level_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="比特时代" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/media_list_rl"
+        style="@style/top_level_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slidingmenu_selector"
+        android:clickable="true"
+        android:minHeight="50dip" >
+
+        <ImageView
+            android:id="@+id/media_list_iv"
+            android:layout_width="28dip"
+            android:layout_height="28dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/slidingmenu_media_list" />
+
+        <TextView
+            android:id="@+id/tv_media_list"
+            style="@style/top_level_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/media_list_iv"
+            android:text="@string/message_title" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/jiantouyoubian" />
+    </RelativeLayout>
+
+    <View style="@style/line_horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/settings_rl"
+        style="@style/top_level_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slidingmenu_selector"
+        android:clickable="true"
+        android:minHeight="50dip" >
+
+        <ImageView
+            android:id="@+id/settings_iv"
+            android:layout_width="28dip"
+            android:layout_height="28dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/slidingmenu_settings" />
+
+        <TextView
+            android:id="@+id/tv_settings"
+            style="@style/top_level_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/settings_iv"
+            android:text="设置" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/jiantouyoubian" />
+    </RelativeLayout>
+
+    <View style="@style/line_horizontal" />
+
+</com.coinwtb.coinassistant.widget.RightMenuLinearLayout>

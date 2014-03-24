@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/flipper_details"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_radio"
+        android:flipInterval="200"
+        android:persistentDrawingCache="animation" >
+
+        <include layout="@layout/coin_price_show" />
+
+        <include layout="@layout/coin_waring_main" />
+    </ViewFlipper>
+
+    <RadioGroup
+        android:id="@+id/main_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_bottom_bg"
+        android:gravity="fill"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_button0"
+            style="@style/main_tab_bottom"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill"
+            android:checked="true"
+            android:drawableTop="@drawable/home_tab_main_selectbg"
+            android:ellipsize="none"
+            android:tag="radio_button0"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/radio_button1"
+            style="@style/main_tab_bottom"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill"
+            android:drawableTop="@drawable/home_tab_waring_selectbg"
+            android:tag="radio_button1"
+            android:text="预警" />
+
+        <RadioButton
+            android:id="@+id/radio_button2"
+            style="@style/main_tab_bottom"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill"
+            android:drawableTop="@drawable/home_tab_waring_selectbg"
+            android:tag="radio_button2"
+            android:text="资讯"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/radio_button3"
+            style="@style/main_tab_bottom"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill"
+            android:drawableTop="@drawable/home_tab_settings_selectbg"
+            android:tag="radio_button3"
+            android:text="设置"
+            android:visibility="gone" />
+    </RadioGroup>
+
+    <ViewStub
+        android:id="@+id/viewstub"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout="@layout/app_home_helper" />
+
+</RelativeLayout>

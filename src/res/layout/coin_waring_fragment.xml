@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.coinwtb.coinassistant.widget.CoinWarningRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        style="@style/NormalHeaderBar" >
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="#ffC9C9C9"
+            android:minWidth="50dip"
+            android:padding="8dip"
+            android:text="删除" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextNormalHeaderBar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="2dip"
+            android:text="@string/toast_alert_not_title" />
+
+        <Button
+            android:id="@+id/btn_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="#ffC9C9C9"
+            android:minWidth="50dip"
+            android:padding="8dip"
+            android:text="设置" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_layout"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/progress_dialog"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip" />
+
+        <include layout="@layout/coin_price_info" />
+
+        <TextView
+            android:id="@+id/tv_alert_status"
+            style="@style/NormalTextMediumGrey"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="@dimen/coin_price_margin_left"
+            android:text="@string/coin_waring_status_format" 
+            android:visibility="invisible">
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@id/btn_submit"
+        style="@style/NormalButtonSubmit"
+        android:layout_width="fill_parent"
+        android:layout_centerVertical="true"
+        android:contentDescription="true"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone"
+        android:text="还未添加货币，点击添加" />
+
+</com.coinwtb.coinassistant.widget.CoinWarningRelativeLayout>
